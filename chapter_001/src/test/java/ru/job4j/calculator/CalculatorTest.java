@@ -19,7 +19,7 @@ public class CalculatorTest {
     public void whenSubtractOneMinusOneThenZero() {
         Calculator calc = new Calculator();
         calc.substract(1D, 1D);
-        double result = calc.getSubstractResult();
+        double result = calc.getResult();
         double expected = 0;
         assertThat(result, is(expected));
     }
@@ -27,7 +27,7 @@ public class CalculatorTest {
     public void whenDivOneDivideOneThenOne() {
         Calculator calc = new Calculator();
         calc.div(1D, 1D);
-        double result = calc.getDivResult();
+        double result = calc.getResult();
         double expected = 1;
         assertThat(result, is(expected));
     }
@@ -35,7 +35,7 @@ public class CalculatorTest {
     public void whenMultiplOneMultiplOneThenOne() {
         Calculator calc = new Calculator();
         calc.multiply(1D, 1D);
-        double result = calc.getMultiplResult();
+        double result = calc.getResult();
         double expected = 1;
         assertThat(result, is(expected));
     }
