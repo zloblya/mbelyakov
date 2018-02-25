@@ -8,28 +8,28 @@ public class ConverterTest {
     @Test
     public void when60RubleToDollarThen1() {
         Converter converter = new Converter();
-        double result = converter.rubleToDollar(60);
-        assertThat(result, is(1D));
+        int result = converter.rubleToDollar(60);
+        assertThat(result, is(1));
     }
 
     @Test
     public void when70RubleToEuroThen1() {
         Converter converter = new Converter();
-        double result = converter.rubleToDollar(70);
-        assertThat(result, is(1D));
+        int result = converter.rubleToDollar(70);
+        assertThat(result, is(1));
     }
 
     @Test
     public void when60DollarToRubleThen1() {
         Converter converter = new Converter();
-        double result = converter.dollarToRuble(1);
-        assertThat(result, is(60D));
+        int result = converter.dollarToRuble(1);
+        assertThat(result, is(60));
     }
 
     @Test
     public void when70EuroToRubleThen1() {
         Converter converter = new Converter();
-        double result = converter.euroToRuble(1);
-        assertThat(result, is(70D));
+        int result = converter.euroToRuble(1);
+        assertThat(result, is(70));
     }
 }

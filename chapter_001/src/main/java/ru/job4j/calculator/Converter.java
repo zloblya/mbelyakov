@@ -12,7 +12,7 @@ public class Converter {
      * @param value рубли.
      * @return Евро.
      */
-    public double rubleToEuro(int value) {
+    public int rubleToEuro(int value) {
         return this.result = value / 70;
     }
 
@@ -21,7 +21,7 @@ public class Converter {
      * @param value рубли.
      * @return Доллоры
      */
-    public double rubleToDollar(int value) {
+    public int rubleToDollar(int value) {
         return this.result = value / 60;
     }
 
@@ -30,7 +30,7 @@ public class Converter {
      * @param value доллары.
      * @return Рубли
      */
-    public double dollarToRuble(int value) {
+    public int dollarToRuble(int value) {
         return this.result = value * 60;
     }
 
@@ -39,7 +39,7 @@ public class Converter {
      * @param value евро.
      * @return Рубли
      */
-    public double euroToRuble(int value) {
+    public int euroToRuble(int value) {
         return this.result = value * 70;
     }
 }
