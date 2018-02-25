@@ -35,8 +35,8 @@ public class Converter {
     }
 
     /**
-     * Конвертируем доллары в рубли.
-     * @param value доллары.
+     * Конвертируем евро в рубли.
+     * @param value евро.
      * @return Рубли
      */
     public double euroToRuble(int value) {
