@@ -6,6 +6,8 @@ package ru.job4j.calculator;
 public class Converter {
 
     private int result;
+    private int euro = 70;
+    private int dollar = 60;
 
     /**
      * Конвертируем рубли в евро.
@@ -13,7 +15,7 @@ public class Converter {
      * @return Евро.
      */
     public int rubleToEuro(int value) {
-        return this.result = value / 70;
+        return this.result = value / euro;
     }
 
     /**
@@ -22,7 +24,7 @@ public class Converter {
      * @return Доллоры
      */
     public int rubleToDollar(int value) {
-        return this.result = value / 60;
+        return this.result = value / dollar;
     }
 
     /**
@@ -31,7 +33,7 @@ public class Converter {
      * @return Рубли
      */
     public int dollarToRuble(int value) {
-        return this.result = value * 60;
+        return this.result = value * dollar;
     }
 
     /**
@@ -40,6 +42,6 @@ public class Converter {
      * @return Рубли
      */
     public int euroToRuble(int value) {
-        return this.result = value * 70;
+        return this.result = value * euro;
     }
 }
