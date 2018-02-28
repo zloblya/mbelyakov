@@ -5,9 +5,9 @@ package ru.job4j.calculator;
  */
 public class Fit {
 
-    private double constanta100 = 100;
-    private double constanta110 = 110;
-    private double constanta115 = 1.15;
+    public static final double CONSTANTA100 = 100;
+    public static final double CONSTANTA110 = 110;
+    public static final double CONSTANTA115 = 1.15;
 
     /**
      * Идеальный вес для мужщины.
@@ -16,7 +16,7 @@ public class Fit {
      */
     double manWeight(double height) {
         double weightMan;
-        return weightMan = (height - constanta100) * constanta115;
+        return weightMan = (height - CONSTANTA100) * CONSTANTA115;
     }
 
     /**
@@ -26,6 +26,6 @@ public class Fit {
      */
     double womanWeight(double height) {
         double weightWoman;
-        return weightWoman = (height - constanta110) * constanta115;
+        return weightWoman = (height - CONSTANTA110) * CONSTANTA115;
     }
 }
