@@ -15,8 +15,7 @@ public class Fit {
      * @return идеальный вес.
      */
     double manWeight(double height) {
-        double weightMan;
-        return weightMan = (height - CONSTANTA100) * CONSTANTA115;
+        return (height - CONSTANTA100) * CONSTANTA115;
     }
 
     /**
@@ -25,7 +24,6 @@ public class Fit {
      * @return идеальный вес.
      */
     double womanWeight(double height) {
-        double weightWoman;
-        return weightWoman = (height - CONSTANTA110) * CONSTANTA115;
+        return (height - CONSTANTA110) * CONSTANTA115;
     }
 }
