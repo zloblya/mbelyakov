@@ -6,6 +6,17 @@ import static org.junit.Assert.*;
 
 public class TriangleTest {
     @Test
+    public void whenAreaSetThreePointsThenTrianglePeriod() {
+        Point a = new Point(0, 0);
+        Point b = new Point(0, 2);
+        Point c = new Point(2, 0);
+        Triangle triangle = new Triangle(a, b, c);
+        double result = triangle.period(1, 2, 3);
+        double expected = 3D;
+        assertThat(result, closeTo(expected, 0));
+
+    }
+    @Test
     public void whenAreaSetThreePointsThenTriangleArea() {
         // создаем три объекта класса Point.
         Point a = new Point(0, 0);
