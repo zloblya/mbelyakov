@@ -9,6 +9,7 @@ public class FindLoop {
                 result = index;
             }
         }
+
         return result;
     }
 }

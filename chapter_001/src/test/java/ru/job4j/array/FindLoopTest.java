@@ -14,4 +14,12 @@ public class FindLoopTest {
         int expected = 3;
         assertThat(result, is(expected));
     }
+
+    @Test
+    public void notIndexOf() {
+        FindLoop findLoop = new FindLoop();
+        int result = findLoop.indexOf(new int[] {0, 4, 10, 15, 20}, 15);
+        int expected = 2;
+        assertThat(result, is(expected));
+    }
 }
