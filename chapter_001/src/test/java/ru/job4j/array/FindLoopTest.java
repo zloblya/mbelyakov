@@ -18,8 +18,8 @@ public class FindLoopTest {
     @Test
     public void notIndexOf() {
         FindLoop findLoop = new FindLoop();
-        int result = findLoop.indexOf(new int[] {0, 4, 10, 15, 20}, 15);
-        int expected = 2;
+        int result = findLoop.indexOf(new int[] {0, 4, 10, 15, 20}, 11);
+        int expected = -1;
         assertThat(result, is(expected));
     }
 }
