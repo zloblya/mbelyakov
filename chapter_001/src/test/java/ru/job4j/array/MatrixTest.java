@@ -11,9 +11,9 @@ public class MatrixTest {
     public void tableOfMultiple() {
         Matrix matrix = new Matrix();
         int[][] result = matrix.tableOfMultiple(3);
-        int[][] expected = new int[][] {{0,0,0},
-                                        {0,1,2},
-                                        {0,2,4}};
+        int[][] expected = new int[][] {{1,2,3},
+                                        {2,4,6},
+                                        {3,6,9}};
         assertThat(result, is(expected));
     }
 }
