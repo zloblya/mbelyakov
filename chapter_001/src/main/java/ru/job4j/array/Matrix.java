@@ -1,0 +1,14 @@
+package ru.job4j.array;
+
+public class Matrix {
+
+    public int[][] tableOfMultiple(int size) {
+        int[][] array = new int[size][size];
+        for (int i = 0; i < array.length; i++) {
+            for (int j = 0; j < array.length; j++) {
+                array[i][j] = (i * j);
+            }
+        }
+        return array;
+    }
+}
