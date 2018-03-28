@@ -8,10 +8,15 @@ public class ArrayChar {
     }
 
     public boolean startWith(String prefix) {
+        boolean result = true;
         char[] value = prefix.toCharArray();
-        if (date[0] == 'П' &&  date[1] == 'р' && date[2] == 'и') {
-            return true;
+        for (int i = 0; i < prefix.length(); i++) {
+            if (date[i] != value[i]) {
+                result = false;
+                //break;
+            }
+            //else continue;
         }
-        return false;
+        return result;
     }
 }

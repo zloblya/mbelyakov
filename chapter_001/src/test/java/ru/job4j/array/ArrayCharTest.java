@@ -8,15 +8,15 @@ public class ArrayCharTest {
 
     @Test
     public void startWith() {
-        ArrayChar word = new ArrayChar("Привет");
-        boolean result = word.startWith("При");
+        ArrayChar word = new ArrayChar("Привет дядя Василий");
+        boolean result = word.startWith("Привет дядя");
         assertThat(result, is(true));
     }
 
     @Test
     public void whenNotStartWithPrefixThenFalse() {
-        ArrayChar word = new ArrayChar("Превет");
-        boolean result = word.startWith("Пре");
+        ArrayChar word = new ArrayChar("Привет тетя Нюра");
+        boolean result = word.startWith("Привет детя Нюра");
         assertThat(result, is(false));
     }
 }
