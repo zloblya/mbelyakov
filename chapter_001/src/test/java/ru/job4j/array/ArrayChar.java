@@ -13,9 +13,9 @@ public class ArrayChar {
         for (int i = 0; i < prefix.length(); i++) {
             if (date[i] != value[i]) {
                 result = false;
-                //break;
+                break;
             }
-            //else continue;
+            else continue;
         }
         return result;
     }
