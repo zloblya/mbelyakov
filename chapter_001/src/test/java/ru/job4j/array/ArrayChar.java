@@ -15,7 +15,6 @@ public class ArrayChar {
                 result = false;
                 break;
             }
-            else continue;
         }
         return result;
     }
