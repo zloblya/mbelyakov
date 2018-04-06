@@ -2,11 +2,9 @@ package ru.job4j.array;
 
 public class ArrayChar {
     private char[] date;
-
     public ArrayChar(String line) {
         this.date = line.toCharArray();
     }
-
     public boolean startWith(String prefix) {
         boolean result = true;
         char[] value = prefix.toCharArray();

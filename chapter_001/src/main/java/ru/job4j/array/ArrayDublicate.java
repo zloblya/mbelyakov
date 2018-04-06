@@ -3,7 +3,6 @@ package ru.job4j.array;
 import java.util.Arrays;
 
 public class ArrayDublicate {
-
     public String[] ArrayDublicate(String[] array) {
         int uniqu = array.length;
         for (int out = 0; out < uniqu; out++) {
