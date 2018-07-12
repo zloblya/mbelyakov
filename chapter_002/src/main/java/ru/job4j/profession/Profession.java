@@ -1,33 +1,32 @@
 package ru.job4j.profession;
 
+import javax.print.Doc;
+
 public class Profession {
     String name;
     String profession;
+}
 
-    class Doctor {
-        void heal(Patient patient) {
-        }
+class Engineer extends Profession {
+    void build(Home name) {
     }
+}
 
-    class Patient {
-        String name;
+class Teacher extends Profession {
+    void learn(Student student) {
     }
+}
 
-    class Engineer {
-        void build(Home home){
-        }
+class Doctor extends Profession {
+    void treat(Patient patient) {
     }
+}
 
-    class Home {
-    }
+class Home extends Engineer {
+}
 
-    class Teacher {
-        void learn(Student student) {
+class Student extends Teacher {
+}
 
-        }
-    }
-
-    class Student{
-
-    }
+class Patient extends Doctor {
 }
