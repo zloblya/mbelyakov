@@ -1,10 +1,8 @@
 package ru.job4j.profession;
 
-import javax.print.Doc;
-
 public class Profession {
-    String name;
-    String profession;
+    private String name;
+    private String profession;
 }
 
 class Engineer extends Profession {
